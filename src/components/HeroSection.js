@@ -56,10 +56,11 @@ const HeroSection = () => {
                  <div className="w-[380px] h-[400px] bg-gradient-to-br from-gray-300 to-gray-600 rounded-lg overflow-hidden shadow-2xl">
                    {/* Using the Figma profile image */}
                    <img 
-                     src="/profile-image.png" 
+                     src={process.env.PUBLIC_URL + "/images/profile-image.png"} 
                      alt="Sarah Jones - UX Designer"
                      className="w-full h-full object-cover"
                      onError={(e) => {
+                       console.log('Image failed to load');
                        e.target.style.display = 'none';
                        e.target.nextElementSibling.style.display = 'flex';
                      }}
