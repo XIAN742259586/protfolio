@@ -10,29 +10,44 @@ const HeroSection = () => {
         <div className="flex items-center justify-between h-[518px]">
           {/* Left Content */}
           <div className="w-1/2 pr-12">
-            <div className="space-y-12">
+            <div className="space-y-8">
               {/* Section Heading */}
               <div className="space-y-6">
-                <p className="font-montserrat font-normal text-20 text-primary-dark leading-30">
-                  UX Designer
-                </p>
                 <h1 className="font-montserrat font-bold text-48 text-primary-dark leading-72">
                   Hi There, I'm <br />
-                  <span className="text-primary-red">Sarah Jones</span>
+                  <span className="text-pink-500 font-black">Scarlee</span>
                 </h1>
-                <p className="font-montserrat font-normal text-16 text-primary-dark leading-24 max-w-md">
-                  Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together.
-                </p>
-              </div>
-              
-              {/* CTA Buttons */}
-              <div className="flex space-x-6">
-                <button className="bg-primary-dark text-white font-montserrat font-bold text-16 px-12 py-3 w-[177px] h-12 hover:bg-gray-800 transition-colors">
-                  Hire Me
-                </button>
-                <button className="bg-white text-primary-dark border-2 border-primary-dark font-montserrat font-bold text-16 px-12 py-3 w-[177px] h-12 hover:bg-gray-50 transition-colors">
-                  Portfolio
-                </button>
+                
+                {/* Enhanced Welcome Section */}
+                <div className="space-y-6 max-w-lg">
+                  <div className="relative">
+                    <h2 className="font-montserrat font-semibold text-20 text-primary-dark leading-30 mb-4">
+                      Welcome to my portfolio
+                    </h2>
+                    <div className="w-12 h-0.5 bg-gradient-to-r from-red-500 to-pink-500"></div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <p className="font-montserrat font-medium text-16 text-gray-600 leading-24">
+                      I'm a passionate explorer dedicated to the Fintech industry.
+                    </p>
+                    
+                    <p className="font-montserrat font-normal text-16 text-gray-600 leading-24">
+                      Here, I share insights on job hunting in Japan, industry observations, and professional experiences.
+                    </p>
+                    
+                    <p className="font-montserrat font-normal text-16 text-gray-600 leading-24">
+                      I look forward to connecting with like-minded tech enthusiasts as we grow together and witness this transformative era.
+                    </p>
+                  </div>
+                  
+                  {/* Decorative element */}
+                  <div className="flex items-center space-x-2 pt-2">
+                    <div className="w-2 h-2 bg-gradient-to-r from-red-500 to-pink-500 rounded-full"></div>
+                    <div className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                    <div className="w-1 h-1 bg-gray-300 rounded-full"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -57,7 +72,7 @@ const HeroSection = () => {
                    {/* Using the Figma profile image */}
                    <img 
                      src={process.env.PUBLIC_URL + "/images/profile-image.png"} 
-                     alt="Sarah Jones - UX Designer"
+                     alt="Scarlee - Fintech Explorer"
                      className="w-full h-full object-cover"
                      onError={(e) => {
                        console.log('Image failed to load');

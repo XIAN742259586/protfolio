@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="relative group cursor-pointer">
           <span className="font-inter font-bold text-4xl text-primary-dark leading-tight tracking-tight hover:scale-105 transition-transform duration-300">
             <span className="text-gray-800">A Girl's</span>{' '}
-            <span className="text-primary-red font-black bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="text-pink-500 font-black">
               Unfolding
             </span>
             {' '}<span className="text-gray-800">Story</span>
