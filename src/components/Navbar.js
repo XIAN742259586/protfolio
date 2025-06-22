@@ -5,12 +5,17 @@ const Navbar = () => {
     <nav className="flex items-center justify-between px-16 py-6 relative z-10">
       {/* Logo */}
       <div className="flex items-center">
-        <span className="font-inter font-extrabold text-30 text-primary-dark leading-45" style={{letterSpacing: '-6.6px'}}>
-          SJ
-        </span>
-        <span className="font-inter font-semibold text-30 text-primary-red leading-45 ml-1">
-          Design
-        </span>
+        <div className="relative group cursor-pointer">
+          <span className="font-inter font-bold text-4xl text-primary-dark leading-tight tracking-tight hover:scale-105 transition-transform duration-300">
+            <span className="text-gray-800">A Girl's</span>{' '}
+            <span className="text-primary-red font-black bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+              Unfolding
+            </span>
+            {' '}<span className="text-gray-800">Story</span>
+          </span>
+          <div className="absolute -top-2 -right-3 w-3 h-3 bg-gradient-to-r from-primary-red to-pink-400 rounded-full animate-pulse shadow-lg"></div>
+          <div className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-white rounded-full"></div>
+        </div>
       </div>
 
       {/* Navigation Links */}

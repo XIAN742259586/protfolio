@@ -1,7 +1,7 @@
 {
   "name": "sarah-jones-portfolio",
   "version": "0.1.0",
-  "homepage": "https://yourusername.github.io/protfolio",
+  "homepage": "https://[你的GitHub用户名].github.io/protfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
