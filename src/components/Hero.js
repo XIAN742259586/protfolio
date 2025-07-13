@@ -4,9 +4,11 @@ import HeroSection from './HeroSection';
 
 const Hero = () => {
   return (
-    <div className="bg-primary-pink">
+    <div className="bg-primary-pink min-h-screen flex flex-col">
       <Navbar />
-      <HeroSection />
+      <div className="flex-1 flex items-center">
+        <HeroSection />
+      </div>
     </div>
   );
 };
